@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    .main{
+        height:100vh;
+        background-color:whitesmoke;
+        display:flex;
+        align-items: center;
+         }
+         .left{
+             width:50%;
+             height: 300px;
+             display:flex;
+             justify-content: center;
+             align-items: center;
+         }
+         .right{
+             width: 50%;
+             height: 300px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+    .head-text{
+        color: blue;
+        font-size: 83px;
+        font-weight: 900;
+    }
+    .other-text{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .sub-left{
+        width:60%;
+    }
+    .sub-right{
+        width:60%;
+    }
+.input{
+    width: 88%;
+    padding:20px;
+    margin:5px;
+    border-radius: 10px;
+}
+.button{
+    width:95%;
+    padding:20px;
+    margin: 10px;
+  background-color: blue;
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.form-div{
+    width:100%;
+    background-color:white;
+    padding: 25px;
+    border-radius:10px;
+    box-shadow: px 0px 2px 0px;
+}
+.a{
+    text-align: center;
+    padding: 10px;
+    color:blue;
+}
+.Create-button{
+    background-color: green;
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+    width: 75%;
+    padding: 15px;
+    margin:25px;
+    border-radius: 10px;
+}
+.Create.div{
+    display:flex;
+    justify-content: center;
+   
+}
+.extra{
+    text-align: center;
+    padding: 10px;
+}
+
+
+</style>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="sub-left">
+                <div class="head-text">facebook</div>
+                    <div class="other-text">
+                    Connects with friends around the world you on Facebook.
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="sub-right">
+                <div class="form-div">
+                    <form>
+                        <input type="text" class="input" placeholder="Email or Phone number"/>
+                        <input type="Password" class="input" placeholder="Password"/>
+                        <input type="button" class="button" value="Log In"/> 
+                    </form>
+                    <div class="a"> <a href="">Forget password?</a> </div>
+                    <hr>
+                    <div class="Create-div">
+                        <input type="button" class="Create-button" value="Create New account"/>
+                    </div>
+                </div>
+                    <div class="extra"> <b>Create a Page</b> for a celebrity,brand or business.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0%;
+        padding:0%;
+        box-sizing: border-box;
+        background-color: lightgray;
+    }
+    .main{
+        height:400px;
+        width:100%;
+        display:flex;
+        align-items: center;
+         }
+         .left{
+             width:50%;
+             height: 300px;
+             display:flex;
+             justify-content: center;
+             align-items: center;
+         }
+         .right{
+             width: 50%;
+             height: 300px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+    .head-text{
+        color:blue;
+        font-size:60px;
+        font-weight: 900;
+    }
+    .other-text{
+        font-size:30px;
+        font-weight: 300;
+    }
+    .sub_left{
+        width:60%;
+    }
+    .sub-right{
+        height:60%;
+    }
+.input{
+    width: 88%;
+    padding:20px;
+    margin:5px;
+    border-radius: 11px;
+}
+.button{
+    width:95%;
+    padding:20px;
+    margin: 10px;
+  background-color: blue;
+    color:white;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.form-div{
+    width:70%;
+    padding:25px;
+    background-color:rgb(213, 193, 193);
+    border-radius:10px;
+    box-shadow: 2px 3px 2px 4px;
+}
+.a{
+    text-align: center;
+    padding: 10px;
+    color:blue;
+}
+.hr{
+    margin:12px;
+}
+.b{
+    width:75%;
+    padding:15px;
+    margin:25px;
+    font-size: 20px;
+    border-radius:10px;
+    background-color: green;
+    color:white;
+    font-weight: 600;
+}
+.extra{
+    text-align:center;
+    font-size: 12px;
+}
+.a a{
+    text-decoration: none;
+}
+.b a{
+    text-decoration: none;
+}
+.extra a{
+    text-decoration: none;
+}
+</style>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="sub-left">
+                <div class="head-text"> <h2>facebook</h2></div>
+                    <div class="other-text">
+                    Connects with friends and the world <br>around you on Facebook.
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="sub-right">
+                <div class="form-div">
+                        <input type="email and phone number" class="input" name:"email" placeholder="Email or Phone number"/>
+                        <input type="Password"class="input" name:"password" placeholder="Password"/>
+                        <input type="submit" class="button" value="Log In"/> 
+                    <div class="a"> <a href="">Forget password?</a> </div>
+                   <div class="hr"> <hr> </div>
+                   <div class="b">  <a href="">Create a new account</a> </div>
+                </div>
+                    <div class="extra"> <a href=""> Create a Page</a> </b> for a celebrity,brand or business.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
