@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form fill-up</title>
+    <style> 
+            body{
+            font-size:medium;
+        }
+        fieldset{
+            width:fit-content;
+        }
+        
+        form {
+            width: 400px;
+            margin: 7px;
+            padding:2px;
+        }
+
+/* Style the submit and reset buttons */
+input[type="submit"], input[type="reset"] {
+  width: 100px; /* adjust the width as needed */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border:none;
+  background-color: #4CAF50;  
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color:orange;
+}
+
+
+legend {
+  font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Enter your registration</legend>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+            
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="ratherNotSay" name="gender" value="Rather not to say">
+            <label for="ratherNotSay">Rather not to say</label><br><br>
+            
+            <label for="program">Program:</label>
+            <select id="program" name="program">
+                <option>Bsc.CSIT</option>
+                <option selected>BCA IT</option>
+                <option>BIT</option>
+            </select><br><br>
+            
+            <label>Categories:</label>
+            <input type="checkbox" id="dsa" name="categories" value="DSA" checked>
+            <label for="dsa">DSA</label>
+            <input type="checkbox" id="dbms" name="categories" value="DBMS">
+            <label for="dbms">DBMS</label>
+            <input type="checkbox" id="java" name="categories" value="JAVA">
+            <label for="java">JAVA</label> 
+            <input type="checkbox" id="sad" name="categories" value="SAD">
+            <label for="sad">SAD</label>
+            <input type="checkbox" id="statProb" name="categories" value="Stat&Prob">
+            <label for="statProb">Stat&Prob</label> <br> <br>
+
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="7" cols="17"></textarea><br><br>
+            
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept=".jpg,.png,.gif"><br><br>
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear All">
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<body>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  <table border="1" align="center" width="70%">
+    <tr>
+      <th>Basic Calculator</th>
+    </tr>
+    <tr>
+      <td>Enter first number</td>
+      <td><input type="number" placeholder="Enter first number" name="num1"></td>
+    </tr>
+    <tr>
+      <td>Enter second number</td>
+      <td><input type="number" placeholder="Enter second number" name="num2"></td>
+    </tr>
+    <tr>
+      <td>Output:</td>
+      <td><input type="text" readonly name="answer"></td>
+    </tr>
+    <tr>
+      <td>
+        <button type="submit" name="operation" value="add">Add</button>
+        <button type="submit" name="operation" value="subtract">Subtract</button>
+        <button type="submit" name="operation" value="multiply">Multiply</button>
+        <button type="submit" name="operation" value="divide">Divide</button>
+      </td>
+    </tr>
+  </table>
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $num1 = $_POST['num1'];
+    $num2 = $_POST['num2'];
+    $operation = $_POST['operation'];
+    $result = '';
+
+    switch ($operation) {
+      case 'add':
+        $result = $num1 + $num2;
+        break;
+      case 'subtract':
+        $result = $num1 - $num2;
+        break;
+      case 'multiply':
+        $result = $num1 * $num2;
+        break;
+      case 'divide':
+        if ($num2 != 0) {
+          $result = $num1 / $num2;
+        } else {
+          $result = 'Error: Division by zero';
+        }
+        break;
+      default:
+        $result = 'Error: Invalid operation';
+    }
+
+    echo '<p>The result of ' . $operation . 'ing ' . $num1 . ' and ' . $num2 . ' is: ' . $result . '</p>';
+}
+?>
+</body>
+</html>

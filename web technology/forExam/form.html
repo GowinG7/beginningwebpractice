@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form fill-up</title>
+    <style> 
+        body {
+            font-size: medium;
+        }
+        fieldset {
+            width: fit-content;
+        }
+        form {
+            width: 400px;
+            margin: 7px;
+            padding: 2px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 100px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;  
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: orange;
+        }
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Enter your registration</legend><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+            
+            <label for="phone">Phone no:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+            
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+            
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+            
+            <label for="program">Program:</label>
+            <select id="program" name="program">
+                <option value="Bsc.CSIT">Bsc.CSIT</option>
+                <option value="BCA IT" selected>BCA IT</option>
+                <option value="BIT">BIT</option>
+            </select><br><br>
+            
+            <label>Categories:</label><br>
+            <input type="checkbox" id="dsa" name="categories" value="DSA" checked>
+            <label for="dsa">DSA</label>
+            <input type="checkbox" id="dbms" name="categories" value="DBMS">
+            <label for="dbms">DBMS</label>
+            <input type="checkbox" id="java" name="categories" value="JAVA">
+            <label for="java">JAVA</label>
+            <input type="checkbox" id="sad" name="categories" value="SAD">
+            <label for="sad">SAD</label>
+            <input type="checkbox" id="statProb" name="categories" value="Stat&Prob">
+            <label for="statProb">Stat&Prob</label><br><br>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"  rows="5" cols="10" ></textarea><br><br>
+            
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea> <br> <br>
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept=".jpg,.png,.gif"><br><br>
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear All">
+        </fieldset>
+    </form>
+</body>
+</html>
